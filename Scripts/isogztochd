@@ -1,14 +1,10 @@
 #!/bin/bash
 
-
-
 # convert input to "name."
 rawName=$(echo $1 | sed 's/iso//')
 rawName=$(echo $rawName | sed 's/.gz//')
 
 echo Converting "$1" to "$rawName"chd...
-
-#cp $1 $1.bak
 
 gunzip $1
 
