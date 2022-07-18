@@ -1,0 +1,11 @@
+#!/bin/bash
+
+fossilize-merge-db _mergedShaders.foz $(ls -1 | grep -i .foz)
+chmod +x _mergedShaders.foz
+
+for foz in *.foz
+do
+	fossilize-replay $foz
+done
+
+rm _mergedShaders.foz
