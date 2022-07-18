@@ -2,3 +2,4 @@
 
 ## Scripts:
 - isogztochd: Converts .iso.gz files to .chd files (for game ROMs)
+- compileallshaders: Compiles all valve fossilize shader files in a folder
